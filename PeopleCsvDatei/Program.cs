@@ -43,7 +43,6 @@ namespace People
                 if (persons[i] != null)
                 {
                     string line = persons[i].Replace(' ', ';'); // Replace spaces with semicolons for CSV format
-                    writer.WriteLine(line);
                 }
             }
         }
