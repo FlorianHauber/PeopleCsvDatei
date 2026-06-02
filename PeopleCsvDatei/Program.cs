@@ -40,6 +40,9 @@ namespace People
             if (File.Exists(filePath))
             {
                 lines = File.ReadAllLines(filePath);
+
+                persons = new string[lines.Length + 10]; // Resize the persons array to fit the number of lines in the CSV file
+
                 for (int i = 0; i < lines.Length && i < persons.Length; i++)
                 {
                     persons[i] = lines[i];
