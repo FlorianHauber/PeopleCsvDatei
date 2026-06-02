@@ -41,14 +41,20 @@ namespace People
 
             for (int i = 0; i < persons.Length; i++)
             {
-                if (persons[i] != null)
+                for (int j = 0; j < persons[i]?.Length; j++)
                 {
-                    if (persons[i] == ' ')
+                    if (persons[i][j] == ' ')
                     {
-                        content[i] = persons[i].Replace(' ', ';'); // Replace spaces with semicolons for CSV format
+                        content[i] += ";"; // Replace the space with a semicolon
+                    }
+                    else
+                    {
+                        content[i] += persons[i][j]; // Keep the character as it is
                     }
                 }
             }
+
+            File.WriteAllLines(filePath, content);
         }
 
         private static void ReadCSVFile()
