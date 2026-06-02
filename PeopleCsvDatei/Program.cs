@@ -28,7 +28,7 @@ namespace People
 
             FilterListWithAge();
 
-            Console.Write("Press enter to exit ...");
+            Console.Write("\nPress enter to exit ...");
             Console.ReadLine();
         }
 
