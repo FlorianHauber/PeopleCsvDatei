@@ -45,14 +45,24 @@ namespace People
 
                 for (int i = 0; i < lines.Length && i < persons.Length; i++)
                 {
-                    persons[i] = lines[i];
+                    for (int j = 0; j < lines[i].Length; j++)
+                    {
+                        if (lines[i][j] == ';')
+                        {
+                            persons[i] += " "; // Replace the semicolon with a space
+                        }
+                        else
+                        {
+                            persons[i] += lines[i][j]; // Keep the character as it is
+                        }
+                    }
+                }
+            else
+                {
+                    Console.WriteLine("CSV file not found. Starting with an empty list.");
                 }
             }
-            else
-            {
-                Console.WriteLine("CSV file not found. Starting with an empty list.");
-            }
-        }
+
 
         private static string[] Split(string s, char delimiter)
         {
