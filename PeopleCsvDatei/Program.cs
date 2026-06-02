@@ -39,7 +39,13 @@ namespace People
             string filePath = "people.csv";
             string[] content = new string[persons.Length];
 
-            for (int i = )
+            for (int i = 0; i < persons.Length; i++)
+            {
+                if (persons[i] != null)
+                {
+                    content[i] = persons[i].Replace(' ', ';'); // Replace spaces with semicolons for CSV format
+                }
+            }
         }
 
         private static void ReadCSVFile()
