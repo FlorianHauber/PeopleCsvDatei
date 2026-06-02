@@ -15,6 +15,8 @@ namespace People
 
         private static void Main(string[] args)
         {
+            ReadCSVFile();
+
             GetAllInfo();
 
             Console.Clear();
@@ -28,6 +30,25 @@ namespace People
 
             Console.Write("Press enter to exit ...");
             Console.ReadLine();
+        }
+
+        private static void ReadCSVFile()
+        {
+            string filePath = "people.csv";
+            string[] lines = new string[1];
+
+            if (File.Exists(filePath))
+            {
+                lines = File.ReadAllLines(filePath);
+                for (int i = 0; i < lines.Length && i < persons.Length; i++)
+                {
+                    persons[i] = lines[i];
+                }
+            }
+            else
+            {
+                Console.WriteLine("CSV file not found. Starting with an empty list.");
+            }
         }
 
         private static string[] Split(string s, char delimiter)
