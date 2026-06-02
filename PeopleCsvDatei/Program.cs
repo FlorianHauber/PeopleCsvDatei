@@ -57,12 +57,12 @@ namespace People
                         }
                     }
                 }
-            else
-                {
-                    Console.WriteLine("CSV file not found. Starting with an empty list.");
-                }
             }
-
+            else
+            {
+                Console.WriteLine("CSV file not found. Starting with an empty list.");
+            }
+        }
 
         private static string[] Split(string s, char delimiter)
         {
