@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("PeopleCsvDatei")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8fc32e70b0165951828e7f1a430f69ecf9107bec")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+43db90e280544c25a18e4951c09f438afbbb0c8d")]
 [assembly: System.Reflection.AssemblyProductAttribute("PeopleCsvDatei")]
 [assembly: System.Reflection.AssemblyTitleAttribute("PeopleCsvDatei")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
