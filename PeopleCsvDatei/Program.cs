@@ -34,6 +34,22 @@ namespace People
             Console.ReadLine();
         }
 
+        private static void SaveFile()
+        {
+            string filePath = "people.csv";
+            using (StreamWriter writer = new StreamWriter(filePath))
+            {
+                for (int i = 0; i < persons.Length; i++)
+                {
+                    if (persons[i] != null)
+                    {
+                        string line = persons[i].Replace(' ', ';'); // Replace spaces with semicolons for CSV format
+                        writer.WriteLine(line);
+                    }
+                }
+            }
+        }
+
         private static void ReadCSVFile()
         {
             string filePath = "people.csv";
