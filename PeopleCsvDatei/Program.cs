@@ -41,7 +41,7 @@ namespace People
 
             for (int i = 0; i < persons.Length; i++)
             {
-                for (int j = 0; j < persons[i]?.Length; j++)
+                for (int j = 0; j < persons[i].Length; j++)
                 {
                     if (persons[i][j] == ' ')
                     {
