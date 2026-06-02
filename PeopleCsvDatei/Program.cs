@@ -28,6 +28,8 @@ namespace People
 
             FilterListWithAge();
 
+            SaveFile();
+
             Console.Write("\nPress enter to exit ...");
             Console.ReadLine();
         }
