@@ -43,7 +43,10 @@ namespace People
             {
                 if (persons[i] != null)
                 {
-                    content[i] = persons[i].Replace(' ', ';'); // Replace spaces with semicolons for CSV format
+                    if (persons[i] == ' ')
+                    {
+                        content[i] = persons[i].Replace(' ', ';'); // Replace spaces with semicolons for CSV format
+                    }
                 }
             }
         }
