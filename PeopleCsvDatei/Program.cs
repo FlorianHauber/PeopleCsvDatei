@@ -2,7 +2,7 @@
  * Author: Florian Hauber
  * Class: 1IHIF
  * Date: 2026-02-06
- * Description: This program allows the user to enter information about people (last name, first name, year of birth) and then displays all entered persons. It also allows the user to filter the list of persons based on a minimum age.
+ * Description: This program allows the user to enter information about people (last name, first name, year of birth) and then displays all entered persons. It also allows the user to filter the list of persons based on a minimum age. And in the beginning it reads from the .csv file and adds the information to the list of persons. If the .csv file does not exist, it starts with an empty list.
  * ********************************/
 
 namespace People
